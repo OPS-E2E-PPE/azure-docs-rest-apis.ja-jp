@@ -1,0 +1,54 @@
+{
+  "build_entry_point": "docs",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "e2eppe-AzureRestApi",
+      "build_source_folder": ".",
+      "build_output_subfolder": "e2eppe-AzureRestApi",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RESTOperation": "Content",
+        "RESTOperationGroup": "Content",
+        "RESTOperationV3": "Content",
+        "RESTOperationGroupV3": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "customized_template_paths": [
+        "templates"
+      ],
+      "version": 0
+    }
+  ],
+  "notification_subscribers": [],
+  "branches_to_filter": [
+    "master-sync-work",
+    "live-sync-work"
+  ],
+  "git_repository_branch_open_to_public_contributors": "master",
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master-prerelease",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "AzureRestApi/swagger/source",
+      "url": "https://github.com/Azure/azure-rest-api-specs",
+      "branch": "master",
+      "branch_mapping": {}
+    }
+  ],
+  "need_generate_pdf_url_template": false,
+  "log_codes_to_ignore": ["DuplicateUids","InvalidInternalBookmark"],
+  "EnableIncrementalBuild": false
+}
